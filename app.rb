@@ -6,6 +6,15 @@ class App < Sinatra::Base
     erb :food_form
   end
 
+  get '/reverse' do
+    "Hello World!"
+  end
+
   # Add your post route and action below
+
+  post '/food' do
+    "My name is #{params[:name]}, and I love #{params[:favorite_food]}"
+  end
+
 
 end
